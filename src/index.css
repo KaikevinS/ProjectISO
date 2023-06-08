@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f5f5f5;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-image: url("Assets/calendar.png");
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.Toastify__toast {
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(
+    116.79deg,
+    rgba(68, 171, 149, 0.3) 0%,
+    rgba(71, 179, 156, 0.3) 99.45%
+  );
+  color: #2a7166;
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(
+    116.79deg,
+    rgba(209, 2, 52, 0.3) 0%,
+    rgba(209, 2, 52, 0.3) 99.45%
+  );
+  color: #d10234;
+}
+
+.Toastify__toast-icon {
+  order: 2;
+}
+
+.Toastify__progress-bar {
+  height: 2px;
+}
